@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: apple-tube
+    runtime: static
+    buildCommand: echo "no build"
+    staticPublishPath: .
+    routes:
+      - type: rewrite
+        source: /
+        destination: /Apple-tube.html
